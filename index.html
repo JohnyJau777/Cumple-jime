@@ -268,9 +268,19 @@
     border-radius:1px;
     background:linear-gradient(180deg, #bcd8e8 0%, #bcd8e8 55%, #8fae72 55%, #8fae72 100%);
   }
+  .polaroid img.shot{
+  width:100%;
+  height:88px;
+  object-fit:cover;
+  display:block;
+}
   .polaroid.p1{ top:2%; left:8%; transform:rotate(-9deg); }
   .polaroid.p2{ top:0%; left:42%; transform:rotate(6deg); }
   .polaroid.p3{ top:16%; left:66%; transform:rotate(-3deg); width:80px; }
+  .polaroid.p4{ top:6%; left:85%; transform:rotate(5deg); }
+  .polaroid.p5{ top:32%; left:88%; transform:rotate(-6deg); width:80px; }
+  .polaroid.p6{ top:60%; left:80%; transform:rotate(4deg); }
+  .polaroid.p7{ top:82%; left:52%; transform:rotate(-3deg); width:80px; }
 
   .sticker{ position:absolute; filter:drop-shadow(0 6px 10px rgba(0,0,0,0.35)); }
   .sticker.heart{ top:40%; left:4%; width:56px; transform:rotate(-8deg); }
@@ -591,9 +601,13 @@
   </div>
 
   <div class="carta-deco">
-    <div class="polaroid p1"><div class="shot"></div></div>
-    <div class="polaroid p2"><div class="shot"></div></div>
-    <div class="polaroid p3"><div class="shot"></div></div>
+    <div class="polaroid p1"><img class="shot" src="jime1.jpg"></div>
+    <div class="polaroid p2"><img class="shot" src="jime2.jpg"></div>
+    <div class="polaroid p3"><img class="shot" src="jime3.jpg"></div>
+    <div class="polaroid p4"><img class="shot" src="jime4.JPG"></div>
+    <div class="polaroid p5"><img class="shot" src="jim5.jpg"></div>
+    <div class="polaroid p6"><img class="shot" src="jim6.jpg"></div>
+    <div class="polaroid p7"><img class="shot" src="jime7.JPG"></div>
 
     <svg class="sticker heart" viewBox="0 0 64 56" xmlns="http://www.w3.org/2000/svg">
       <path d="M32 52 C10 38 2 26 2 15 C2 5 10 -1 19 3 C25 5.5 30 11 32 15 C34 11 39 5.5 45 3 C54 -1 62 5 62 15 C62 26 54 38 32 52 Z"
