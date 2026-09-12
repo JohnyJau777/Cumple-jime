@@ -299,14 +299,26 @@
     z-index:1;
   }
 
-  @media (max-width:800px){
-    #carta{ flex-direction:column; padding:80px 7vw 60px; gap:30px; }
-    .carta-card{ width:100%; transform:none; }
-    .carta-bubble{ transform:none; }
-    .carta-deco{ width:100%; min-height:220px; align-self:auto; }
-    .polaroid, .sticker{ transform:none !important; }
+@media (max-width:800px){
+  #carta{ flex-direction:column; padding:80px 7vw 60px; gap:30px; }
+  .carta-card{ width:100%; transform:none; }
+  .carta-bubble{ transform:none; }
+  .carta-deco{
+    width:100%;
+    min-height:auto;
+    align-self:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:flex-start;
+    gap:18px 14px;
+    padding:6px 0 34px;
   }
-
+  .polaroid, .sticker{ position:static !important; }
+  .polaroid:nth-child(odd){ transform:rotate(-5deg) !important; }
+  .polaroid:nth-child(even){ transform:rotate(4deg) !important; }
+  .sticker{ align-self:center; }
+}
   /* ================= GARDEN / JARDÍN ================= */
   #jardin{
     position:relative;
